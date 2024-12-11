@@ -123,6 +123,7 @@
     //     });
     // });
     
+    
 // Khi nhắn template thì preview template
     $(document).ready(function(){
         // Khởi tạo biến để lưu trữ thông tin template được chọn
