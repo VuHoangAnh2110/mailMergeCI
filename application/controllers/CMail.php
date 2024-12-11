@@ -81,7 +81,7 @@ class CMail extends CI_Controller {
             $templateProcessor->setValue('name4', 'Vẫn Tao Đây');
 
             $templateProcessor->setValue('email1','agrgrgb24@gmail.com');
-            $templateProcessor->setValue('mota2','Đây là trang fb của bé Hoàng Anh');
+            $templateProcessor->setValue('mota2','Đây là trang fb của Hoàng Anh');
 
             $templateProcessor->setImageValue('image',
             [
@@ -171,7 +171,7 @@ class CMail extends CI_Controller {
         $data1['data'] = $data;
         $this->load->view('layout/VLayout', $data1);
     }
-// ==================================================================================================================================
+
 
 // Tải file và trộn thư ==============================================================================================================
     public function mailMerge() {
@@ -200,7 +200,7 @@ class CMail extends CI_Controller {
             echo "Vui lòng chọn một file Excel.";
         }
     }
-// ================================================================================================================================
+
 
 // Trộn dữ liệu thành nhiều file rồi đóng vào 1 file zip ===========================================================================
     public function mergeWordOne($uploaded_excel_file) {
@@ -255,8 +255,8 @@ class CMail extends CI_Controller {
         readfile($zipName);
         exit; // Ngừng thực thi sau khi tải xong
     }
-// =================================================================================================================================
 
+    
 // Trộn dữ liệu thành nhiều page trong 1 file =======================================================================================
     public function mergeWordAll($uploaded_excel_file) {
         // Đọc dữ liệu từ file Excel
