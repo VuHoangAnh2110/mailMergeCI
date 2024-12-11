@@ -13,7 +13,7 @@ class CMail extends CI_Controller {
         parent::__construct();  
 
         $this->load->model("MTemplate");
-        // require_once 'vendor/autoload.php'; 
+        require_once 'vendor/autoload.php'; 
     }
 	/**
 	 * Index Page for this controller.
@@ -50,7 +50,7 @@ class CMail extends CI_Controller {
 	}
 
 // Tải file mẫu excel về máy người dùng ==========================================================================================
-    public function download_excel(): void{
+    public function download_excel(): void {
        $filePath = FCPATH . 'application/assets/templates/temp2.xlsx';
 
        if (file_exists($filePath)) {
@@ -256,7 +256,7 @@ class CMail extends CI_Controller {
         exit; // Ngừng thực thi sau khi tải xong
     }
 
-    
+
 // Trộn dữ liệu thành nhiều page trong 1 file =======================================================================================
     public function mergeWordAll($uploaded_excel_file) {
         // Đọc dữ liệu từ file Excel
