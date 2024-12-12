@@ -1,0 +1,17 @@
+database: test
+table: template {
+    id: int - AUTO_INCREMENT
+    name_temp: varchar - 40
+    filebath: text
+    placeholder: text
+    imgpath: text
+    excelpath: text
+}
+
+ví dụ: 
+    1
+    Đơn xin vắng
+    application/assets/templates/temp1.docx
+    ten,start,end,nguoikhac,email,sodienthoai,chucvu
+    application/assets/images/temp1.png
+    application/assets/templates/temp2.xlsx
